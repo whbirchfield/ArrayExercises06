@@ -6,8 +6,8 @@ let element1 = ['hydrogen', 'H', 1.008];
 let element2 = ['helium', 'He', 4.003];
 let element26 = ['iron', 'Fe', 55.85];
 
-let elem1desc = ['inert gas', 'second lightest element'];
-let elem2desc = ['diatomic gas', 'lightest element'];
+let elem1desc = ['inert gas', '2nd light element'];
+let elem2desc = ['diatomic gas', 'light element'];
 let elem26desc = ['metal', 'atomic weight 55.847'];
 //b) Define the array 'table', and use 'push' to add each of the element arrays to it. Print 'table' to see its structure.
 
@@ -28,3 +28,17 @@ console.log(table[1][0]);
 console.log(table[2][1]);
 
 //e) 'table' is an example of a 2-dimensional array. The first “level” contains the element arrays, and the second level holds the name/symbol/mass values. Experiment! Create a 3-dimensional array and print out one entry from each level in the array.
+let elem1D = [];
+elem1D.push(element1,elem1desc);
+let elem2D = [];
+elem2D.push(element2,elem2desc);
+let elem26D = [];
+elem26D.push(element26, elem26desc);
+
+let table3D = [];
+table3D.push(elem1D,elem2D,elem26D);
+console.log(table3D);
+
+console.log(table3D[1][0]);
+console.log(table3D[2][1]);
+console.log(table3D[0][0]);
